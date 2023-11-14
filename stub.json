@@ -1,0 +1,1 @@
+{"config":{"system_prompt":"","model":"","temperature":0,"top_p":1,"framework":"nextjs-page-tailwind"},"prompts":[{"prompt":"I have a weather API and I want to call it within ChatGPT. How can I do that?","md5":"0635c20067489875e69221c273fa7bc7"}]}
