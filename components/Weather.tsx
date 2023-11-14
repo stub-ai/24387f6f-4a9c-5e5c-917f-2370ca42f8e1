@@ -2,12 +2,9 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 interface WeatherData {
-  location: {
-    name: string;
-  };
-  current: {
-    temp_c: number;
-  };
+  city: string;
+  temperature: string;
+  description: string;
 }
 
 export default function Weather() {
@@ -26,8 +23,9 @@ export default function Weather() {
     <div>
       {weatherData && (
         <div>
-          <h1>{weatherData.location.name}</h1>
-          <h2>{weatherData.current.temp_c}°C</h2>
+          <h1>{weatherData.city}</h1>
+          <h2>{weatherData.temperature}</h2>
+          <p>{weatherData.description}</p>
         </div>
       )}
     </div>
